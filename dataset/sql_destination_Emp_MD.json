@@ -1,0 +1,33 @@
+{
+	"name": "sql_destination_Emp_MD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azuresqlservice",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "destination/sql"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EmployeeID",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "NYC_Payroll_EMP_MD"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
